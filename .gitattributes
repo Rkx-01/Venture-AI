@@ -1,0 +1,22 @@
+# Configure GitHub Linguist
+
+# Force Python detection for all .py files
+*.py linguist-language=Python
+*.py linguist-detectable=true
+
+# Mark compiled files as generated so they don't count towards statistics
+*.so linguist-generated=true
+*.pyd linguist-generated=true
+*.dll linguist-generated=true
+*.dylib linguist-generated=true
+*.o linguist-generated=true
+*.a linguist-generated=true
+
+# Ignore build artifacts
+dist/** linguist-generated=true
+build/** linguist-generated=true
+
+# Ensure frontend files are properly detected
+*.tsx linguist-detectable=true
+*.ts linguist-detectable=true
+*.css linguist-detectable=true
