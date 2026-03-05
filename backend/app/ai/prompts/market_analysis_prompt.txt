@@ -1,0 +1,38 @@
+Analyze the market opportunity for the following startup idea. You must use logical LLM reasoning to estimate realistic market sizes based on the provided industry, target users, and solution type.
+
+<SCHEMA>
+- "industry": The primary industry or market sector.
+- "tam": Total Addressable Market (TAM) - Realistic estimate with numeric value (e.g., "$25B global market").
+- "sam": Serviceable Available Market (SAM) - Realistic estimate for the specific segment (e.g., "$4B niche segment").
+- "som": Serviceable Obtainable Market (SOM) - Realistic estimate of potential capture in 3-5 years (e.g., "$300M realistic startup capture").
+- "reasoning": A detailed explanation of the logic, data points, and assumptions used to derive the TAM, SAM, and SOM estimates.
+- "industry_growth_rate": Compound Annual Growth Rate (CAGR) estimate (e.g., "15% annually").
+- "market_opportunity_score": A score from 1-100 reflecting the overall attractiveness of the market opportunity.
+</SCHEMA>
+
+<EXAMPLES>
+Example 1
+Idea Analysis Data:
+{
+  "industry": "FoodTech",
+  "target_users": "Busy families and working professionals",
+  "solution_type": "Marketplace App"
+}
+Expected JSON Output:
+{
+  "industry": "FoodTech",
+  "tam": "$250B global meal kit and food delivery market",
+  "sam": "$40B US digital meal subscription market",
+  "som": "$500M realistic capture within 5 years in major urban hubs",
+  "reasoning": "The global market for meal delivery is reaching maturity at $250B. However, the specific SAM for digital meal subscriptions in the US is a $40B subset where high-income busy families reside. Given a marketplace model, capturing 1.25% of this SAM ($500M) is a realistic SOM target through aggressive hub-based expansion.",
+  "industry_growth_rate": "12% CAGR",
+  "market_opportunity_score": 85
+}
+</EXAMPLES>
+
+<INPUT>
+Idea Analysis Data:
+{{idea_data}}
+</INPUT>
+
+Expected JSON Output:

@@ -1,0 +1,31 @@
+Analyze the following startup idea's growth potential and projected market share. Your assessment must be based on the provided market data, industry trends, and the inherent scalability of the solution.
+
+<INPUT_DATA>
+- Market Size (TAM/SAM): {{market_size}}
+- Industry Growth Rate: {{growth_rate}}
+- Product Scalability: {{scalability_context}}
+- User Demand Signals: {{demand_signals}}
+</INPUT_DATA>
+
+<SCHEMA>
+- "growth_projection": A categorical estimate of growth potential (e.g., "Modular", "Steady", "High", "Exponential").
+- "expected_5_year_market_share": A realistic percentage range for market capture within 5 years (e.g., "1-3%", "5-10%").
+- "reasoning": A detailed explanation of the logic and risks considered for these projections.
+</SCHEMA>
+
+<EXAMPLES>
+Example 1
+Expected JSON Output:
+{
+  "growth_projection": "High",
+  "expected_5_year_market_share": "2-5%",
+  "reasoning": "Driven by a $20B TAM and high product scalability via AI automation. While competition is rising, the 12% industry CAGR suggests a path to capturing a 3.5% mid-point share by year 5."
+}
+</EXAMPLES>
+
+<INPUT>
+Idea Context:
+{{idea_context}}
+</INPUT>
+
+Expected JSON Output:

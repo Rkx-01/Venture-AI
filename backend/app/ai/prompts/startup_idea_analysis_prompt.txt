@@ -1,0 +1,39 @@
+You are analyzing the following startup idea. Extract the core business components into a strict JSON format. Do not include any explanations or conversational text.
+
+<SCHEMA>
+- "industry": The primary industry or market sector.
+- "target_users": Who the product is built for (be specific).
+- "problem": The core pain point being solved.
+- "solution_type": The format of the solution (e.g., "Mobile App", "SaaS Platform", "Marketplace", "Hardware").
+- "revenue_model": How the business plans to make money (e.g., "Subscription", "Freemium", "B2B Sales").
+</SCHEMA>
+
+<EXAMPLES>
+Example 1
+Idea: "A marketplace app connecting local freelance chefs with busy families for weekly meal prep."
+Expected JSON Output:
+{
+  "industry": "FoodTech",
+  "target_users": "Busy families and working professionals",
+  "problem": "Lack of time to cook healthy meals at home",
+  "solution_type": "Marketplace App",
+  "revenue_model": "Commission on bookings"
+}
+
+Example 2
+Idea: "A B2B SaaS platform that uses AI to analyze customer support tickets and predict churn."
+Expected JSON Output:
+{
+  "industry": "Customer Success Tech",
+  "target_users": "B2B Customer Support and Success Teams",
+  "problem": "High customer churn due to unidentified dissatisfaction in support interactions",
+  "solution_type": "B2B SaaS Platform",
+  "revenue_model": "Subscription SaaS"
+}
+</EXAMPLES>
+
+<INPUT>
+Idea: "{{startup_idea}}"
+</INPUT>
+
+Expected JSON Output:

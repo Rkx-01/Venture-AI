@@ -1,0 +1,28 @@
+Analyze the following startup idea to identify specific demand signals. Focus on user pain points, growing market needs, and underserved segments. Provide the insights in a strict JSON format.
+
+<SCHEMA>
+- "demand_signals": A list of at least 5 clear demand signals, including pain points, growth areas, and underserved markets. Each signal should be a descriptive string.
+- "reasoning": A brief explanation of the logic and research context behind these signals.
+</SCHEMA>
+
+<EXAMPLES>
+Example 1
+Idea: "AI-powered mental health coach for college students."
+Expected JSON Output:
+{
+  "demand_signals": [
+    "High prevalence of stress and anxiety among Gen Z students",
+    "Rising cost and long wait times for traditional campus counseling",
+    "Increasing comfort with digital-first therapeutic interventions",
+    "Underserved need for 24/7 immediate emotional support agents",
+    "Growing demand for personalized, non-stigmatized mental wellness tools"
+  ],
+  "reasoning": "Signals are derived from CDC reports on student mental health and market trends showing a 30% increase in wellness app adoption among young adults."
+}
+</EXAMPLES>
+
+<INPUT>
+Idea: "{{idea_description}}"
+</INPUT>
+
+Expected JSON Output:

@@ -1,0 +1,28 @@
+Score the overall market opportunity for the following startup idea context from 1 to 10. Your scoring must be objective, data-driven, and transparent.
+
+<INPUT_DATA>
+- TAM (Total Addressable Market): {{tam}}
+- SAM (Serviceable Available Market): {{sam}}
+- Industry Growth Rate: {{growth_rate}}
+- Demand Signals: {{demand_signals}}
+- Competition Level: {{competition_level}}
+</INPUT_DATA>
+
+<SCORING_CRITERIA>
+1. **Market Scale (1-10):** How massive is the TAM/SAM? (10 = Multi-billion dollar global markets)
+2. **Growth Momentum (1-10):** Is the industry expanding rapidly? (10 = High double-digit CAGR)
+3. **Market Gaps (1-10):** Are there significant underserved niches or strong demand signals vs low competition? (10 = High demand, low/fragmented competition)
+4. **Overall Score (1-10):** The weighted average of the above factors.
+</SCORING_CRITERIA>
+
+<SCHEMA>
+- "market_opportunity_score": The final integer score from 1 to 10.
+- "breakdown": {
+    "market_scale_score": score,
+    "growth_momentum_score": score,
+    "market_gap_score": score
+  }
+- "explanation": A detailed, transparent justification for the score, highlighting specifically why the market is or isn't attractive based on the inputs provided.
+</SCHEMA>
+
+Expected JSON Output:

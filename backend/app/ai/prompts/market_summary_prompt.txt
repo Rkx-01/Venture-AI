@@ -1,0 +1,20 @@
+Summarize the following market analysis data into a concise, professional, and insight-driven report. Your summary should highlight the most critical opportunities, risks, and market dynamics in 2-3 powerful sentences.
+
+<MARKET_DATA>
+{{market_data}}
+</MARKET_DATA>
+
+<SCHEMA>
+- "summary": A concise and professional summary of the market analysis (e.g., "The mental health AI market is rapidly expanding with a projected CAGR of 12%...").
+</SCHEMA>
+
+<EXAMPLES>
+Example 1
+Market Data: { "industry": "HealthTech", "tam": "$20B", "growth_rate": "12% CAGR", "demand": "Rising digital wellness tools" }
+Expected JSON Output:
+{
+  "summary": "The HealthTech market for AI wellness is reaching a $20B inflection point with a robust 12% CAGR. High demand for digital-first mental health tools suggests a strong $3B opportunity for specialized student-focused solutions."
+}
+</EXAMPLES>
+
+Expected JSON Output:

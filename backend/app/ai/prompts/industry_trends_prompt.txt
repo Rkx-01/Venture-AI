@@ -1,0 +1,43 @@
+Analyze the current industry trends and market dynamics for the specific industry provided. Provide a detailed, data-informed assessment in a strict JSON format.
+
+<SCHEMA>
+- "industry": The name of the industry.
+- "trends": A list of at least 3 emerging trends (e.g., "AI-driven personalization").
+- "technological_shifts": Key shifts in technology impacting the space (e.g., "Move towards edge computing").
+- "regulatory_factors": Critical regulatory or compliance changes (e.g., "Stricter data privacy laws").
+- "consumer_demand_signals": Current signals of customer demand and behavior (e.g., "Increased preference for remote services").
+- "reasoning": Brief explanation of the research context behind these insights.
+</SCHEMA>
+
+<EXAMPLES>
+Example 1
+Industry: "HealthTech"
+Expected JSON Output:
+{
+  "industry": "HealthTech",
+  "trends": [
+    "AI-driven mental health personalization",
+    "Adoption of remote patient monitoring (RPM)",
+    "Shift toward preventive analytics"
+  ],
+  "technological_shifts": [
+    "Interoperability through FHIR standards",
+    "Generative AI for clinical documentation"
+  ],
+  "regulatory_factors": [
+    "Evolution of HIPAA for telehealth compliance",
+    "EU AI Act impact on diagnostic software"
+  ],
+  "consumer_demand_signals": [
+    "Rising demand for proactive wellness solutions",
+    "Preference for asynchronous communication with care providers"
+  ],
+  "reasoning": "The synthesis is based on recent venture capital flow into digital health and major legislative updates in the US and EU regarding AI health applications."
+}
+</EXAMPLES>
+
+<INPUT>
+Industry: "{{industry}}"
+</INPUT>
+
+Expected JSON Output:

@@ -1,0 +1,36 @@
+Synthesize the following multidimensional analysis of a startup idea into a set of authoritative viability scores (1-10). Your goal is to provide an objective, high-level evaluation that reflects the idea's potential for success and its inherent risks.
+
+<ANALYSIS_INPUTS>
+1. Idea Analysis (Problem/Solution): {{idea_analysis}}
+2. Market Analysis (Sizing/Growth): {{market_analysis}}
+3. Competitor Analysis (SWOT/Density): {{competitor_analysis}}
+</ANALYSIS_INPUTS>
+
+<SCORING_CRITERIA>
+- Market Potential (1-10): Based on TAM/SAM, CAGR, and demand signals. (10 = Massive, 1 = Minute)
+- Competition Score (1-10): (10 = No competition/High moats, 1 = Hyper-competitive)
+- Scalability Score (1-10): Capacity for exponential growth. (10 = Highly scalable)
+- Execution Risk Score (1-10): (1 = Zero risk, 10 = Extreme hurdles)
+</SCORING_CRITERIA>
+
+<SCHEMA>
+- "market_potential_score": Integer (1-10)
+- "competition_score": Integer (1-10)
+- "scalability_score": Integer (1-10)
+- "execution_risk_score": Integer (1-10)
+- "executive_summary": A professional justification for the scores provided.
+</SCHEMA>
+
+<EXAMPLES>
+Example 1
+Expected JSON Output:
+{
+  "market_potential_score": 8,
+  "competition_score": 5,
+  "scalability_score": 9,
+  "execution_risk_score": 3,
+  "executive_summary": "Strong market potential in a high-growth sector with massive scalability. The primary hurdle is mid-competition from established incumbents, but the solution's unique AI moats mitigate significant execution risk."
+}
+</EXAMPLES>
+
+Expected JSON Output:

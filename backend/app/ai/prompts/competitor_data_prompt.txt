@@ -1,0 +1,29 @@
+Collect detailed market intelligence for the following competitor. Your data must be factual, current, and professional.
+
+<INPUT_DATA>
+Competitor Name: {{competitor_name}}
+Industry Context: {{industry}}
+</INPUT_DATA>
+
+<SCHEMA>
+- "name": The exact name of the competitor.
+- "description": A concise, one-sentence description of the competitor.
+- "main_product": The primary product or flagship offering of the company.
+- "target_market": The specific types of users or industries they serve.
+- "pricing_model": Their primary pricing strategy (e.g., "Subscription (SaaS)", "Freemium", "Usage-based", "Enterprise License").
+</SCHEMA>
+
+<EXAMPLES>
+Example 1: Notion AI
+Industry: Productivity
+Expected JSON Output:
+{
+  "name": "Notion AI",
+  "description": "An integrated AI-powered writing and organization toolkit within the Notion workspace.",
+  "main_product": "Notion AI Add-on",
+  "target_market": "Knowledge workers, remote teams, and students",
+  "pricing_model": "Subscription ($10/month per member)"
+}
+</EXAMPLES>
+
+Expected JSON Output:

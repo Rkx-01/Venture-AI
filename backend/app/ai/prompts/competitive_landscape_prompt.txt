@@ -1,0 +1,49 @@
+Quantify the competitive positioning of the following companies for a 2D market landscape chart. You must assign numerical scores (1-10) for 'Innovation Level' and 'Market Presence' based on known market data and product maturity.
+
+<INPUT_DATA>
+Industry: {{industry}}
+Competitors: {{competitors_list}}
+</INPUT_DATA>
+
+<DIMENSIONS>
+1. Innovation Level (1-10): 
+   - 1: Legacy technology, derivative product.
+   - 10: Cutting-edge, disruptive AI, unique IP.
+2. Market Presence (1-10):
+   - 1: Early-stage startup, zero brand awareness.
+   - 10: Global incumbent, dominant market share.
+</DIMENSIONS>
+
+<SCHEMA>
+- "landscape": A list of quantifed competitor objects:
+    - "company": The name of the company.
+    - "innovation": An integer score from 1 to 10.
+    - "market_presence": An integer score from 1 to 10.
+</SCHEMA>
+
+<EXAMPLES>
+Example 1
+Competitors: ["Notion AI", "Motion", "A tiny new AI scheduler"]
+Expected JSON Output:
+{
+  "landscape": [
+    {
+      "company": "Notion AI",
+      "innovation": 8,
+      "market_presence": 9
+    },
+    {
+      "company": "Motion",
+      "innovation": 7,
+      "market_presence": 5
+    },
+    {
+      "company": "A tiny new AI scheduler",
+      "innovation": 9,
+      "market_presence": 1
+    }
+  ]
+}
+</EXAMPLES>
+
+Expected JSON Output:

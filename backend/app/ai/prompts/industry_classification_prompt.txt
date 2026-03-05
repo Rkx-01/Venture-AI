@@ -1,0 +1,43 @@
+Classify the starting startup idea into the most appropriate industry sector and subsector. Your classification must be precise, logical, and follow contemporary market category standards.
+
+<INDUSTRIES>
+- FinTech (Financial Technology)
+- HealthTech (Healthcare Technology)
+- EdTech (Education Technology)
+- AI Tools (Artificial Intelligence & Machine Learning)
+- ClimateTech (Sustainability & Environment)
+- Productivity Software (Work & Collaboration)
+- Consumer App (B2C social/utilty)
+- RetailTech (E-commerce & Shopping)
+- LogiTech (Logistics & Supply Chain)
+- PropTech (Real Estate Technology)
+</INDUSTRIES>
+
+<SCHEMA>
+- "industry": The primary industry sector from the list above.
+- "subsector": A specific niche or vertical within that industry (e.g., "Mental Health Apps", "Neobanking", "LMS").
+</SCHEMA>
+
+<EXAMPLES>
+Example 1
+Idea: "A mobile app that helps college students manage their mental health through AI-based mood tracking."
+Expected JSON Output:
+{
+  "industry": "HealthTech",
+  "subsector": "Mental Health Apps"
+}
+
+Example 2
+Idea: "AI-driven automated accounting for small businesses in the UK."
+Expected JSON Output:
+{
+  "industry": "FinTech",
+  "subsector": "Automated Accounting"
+}
+</EXAMPLES>
+
+<INPUT>
+Idea: "{{idea_text}}"
+</INPUT>
+
+Expected JSON Output:

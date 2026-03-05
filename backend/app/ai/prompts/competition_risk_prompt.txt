@@ -1,0 +1,33 @@
+Estimate the competitive risk and pressure for the following startup idea based on the current market environment. Your assessment must weigh the number of competitors, their market dominance, and the startup's relative differentiation.
+
+<INPUT_DATA>
+Startup Idea: {{idea_text}}
+Industry Context: {{industry}}
+Competitors Analysis: {{competitors_context}}
+Differentiation Context: {{differentiation_context}}
+</INPUT_DATA>
+
+<RISK_FACTORS>
+1. Competitor Density: How many players are actively solving this problem?
+2. Market Dominance: Are there "gorillas" (dominant incumbents) that control the category?
+3. Barriers to Entry: How easy is it for new entrants to replicate the value?
+4. Differentiation Level: How unique is the proposed solution compared to existing alternatives?
+</RISK_FACTORS>
+
+<SCHEMA>
+- "competition_level": Categorical risk level (e.g., "Low", "Moderate", "High", "Extreme").
+- "risk_score": An integer from 1 to 10 (1 = Blue Ocean, 10 = Hyper-competitive Red Ocean).
+- "reasoning": A detailed explanation of why this risk score was assigned, citing specific market dynamics.
+</SCHEMA>
+
+<EXAMPLES>
+Example 1: AI-powered mental health support
+Expected JSON Output:
+{
+  "competition_level": "High",
+  "risk_score": 7,
+  "reasoning": "The Mental Health AI space is becoming crowded with well-funded startups like Wysa and Woebot, while legacy incumbents like BetterHelp are integrating AI features. High risk is driven by significant switching costs and the dominance of established brands, requiring the startup to find a high-conviction niche."
+}
+</EXAMPLES>
+
+Expected JSON Output:

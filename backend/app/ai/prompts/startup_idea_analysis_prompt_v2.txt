@@ -1,0 +1,13 @@
+What is the startup idea?
+{{startup_idea}}
+
+---
+Analyze the startup idea above and extract the following core components into a structured JSON response.
+
+Required JSON keys:
+1. "industry": The primary industry or market sector.
+2. "target_users": Who the product is built for (be specific).
+3. "problem": The core pain point being solved.
+4. "solution_type": The format of the solution (e.g., "Mobile App", "SaaS Platform", "Marketplace", "Hardware").
+5. "revenue_model": How the business plans to make money (e.g., "Subscription", "Freemium", "B2B Sales").
+6. "competitors": A list of 3 potential direct or indirect competitors.

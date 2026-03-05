@@ -1,0 +1,26 @@
+Quantify the market potential for a startup idea based on its market size, growth, and demand signals. You must provide a normalized score from 1 to 10.
+
+<INPUT_DATA>
+TAM (Total Addressable Market): {{tam}}
+SAM (Serviceable Addressable Market): {{sam}}
+Market Growth Rate (CAGR): {{growth_rate}}
+Demand Signals: {{demand_signals}}
+</INPUT_DATA>
+
+<SCORING_LOGIC>
+- Score 9-10: Massive TAM (>$10B), High CAGR (>15%), and strong, validated demand signals.
+- Score 7-8: Large TAM ($1B-$10B), Healthy CAGR (5-15%), and clear demand signals.
+- Score 4-6: Moderate TAM ($100M-$1B), Slow growth, or emerging demand.
+- Score 1-3: Small TAM (<$100M), Stagnant/Declining market, or weak demand.
+</SCORING_LOGIC>
+
+<SCHEMA>
+- "market_potential_score": An integer from 1 to 10.
+- "reasoning": A brief explanation of the score.
+</SCHEMA>
+
+Expected JSON Output:
+{
+  "market_potential_score": 8,
+  "reasoning": "Large $5B TAM with a consistent 12% growth rate. Strong demand signals from emerging remote work trends validate the opportunity."
+}

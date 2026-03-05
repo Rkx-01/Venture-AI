@@ -1,0 +1,35 @@
+Develop a strategic market positioning recommendation for the following startup idea. Your goal is to identify a unique value proposition and a set of competitive advantages that will allow the startup to differentiate itself effectively within its industry and against identified competitors.
+
+<INPUT_DATA>
+Startup Idea: {{idea_text}}
+Industry Context: {{industry}}
+Competitive Landscape Summary: {{competitors_summary}}
+</INPUT_DATA>
+
+<POSITIONING_CRITERIA>
+1. Recommended Positioning: A one-sentence 'North Star' statement that defines the startup's unique role in the market.
+2. Competitive Advantage: 2-4 specific, actionable pillars that represent the startup's strongest 'moats' or differentiators.
+3. Strategic Focus: Where should the company double down to win against incumbents?
+</POSITIONING_CRITERIA>
+
+<SCHEMA>
+- "recommended_positioning": A concise, high-level positioning statement (e.g., "AI-first productivity assistant focused on deep work optimization for remote teams.").
+- "competitive_advantage": A list of specific tactical or strategic advantages (e.g., ["AI scheduling automation", "focus on remote work productivity"]).
+- "strategic_reasoning": A brief explanation of why this positioning is the most viable path to market capture.
+</SCHEMA>
+
+<EXAMPLES>
+Example 1: AI-powered mental health support for college students
+Expected JSON Output:
+{
+  "recommended_positioning": "The first AI mental health companion specifically engineered for the unique academic and social stressors of university life.",
+  "competitive_advantage": [
+    "Context-aware mood tracking for exam periods",
+    "Direct integration with campus wellness resources",
+    "Privacy-first, anonymous peer-support modules"
+  ],
+  "strategic_reasoning": "By narrowing the focus from general mental health to the specific timeline and stressors of college students, the startup can build deep features and integrations that horizontal giants like BetterHelp cannot easily replicate."
+}
+</EXAMPLES>
+
+Expected JSON Output:

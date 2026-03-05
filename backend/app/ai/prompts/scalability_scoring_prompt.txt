@@ -1,0 +1,30 @@
+Quantify the scalability potential for a startup idea based on its product nature, delivery model, and expansion capacity. You must provide a normalized score from 1 to 10.
+
+<IMPORTANT_DIRECTION>
+- High Score (8-10): Digital SaaS, zero marginal cost of reproduction, global reach, automated delivery.
+- Low Score (1-3): Hardware-heavy, service-intensive, local-only, high operational complexity to scale.
+</IMPORTANT_DIRECTION>
+
+<INPUT_DATA>
+Product Scalability: {{product_scalability}}
+Software vs Hardware: {{nature}}
+Global Expansion Potential: {{global_potential}}
+</INPUT_DATA>
+
+<SCORING_LOGIC>
+- Score 9-10: pure-play Digital SaaS/AI. Infinite scalability. Zero marginal cost. Global from Day 1.
+- Score 7-8: Mostly digital with some human-in-the-loop or light operational requirements. High scalability with minor friction.
+- Score 4-6: Hybrid models or complex marketplaces with high coordination costs (e.g., Uber/Airbnb at scale). Scaling requires significant local operations.
+- Score 1-3: Hardware manufacturing, physical retail, or heavy professional services. Linear growth (headcount/physical units must grow with revenue).
+</SCORING_LOGIC>
+
+<SCHEMA>
+- "scalability_score": An integer from 1 to 10.
+- "reasoning": A brief explanation of the score.
+</SCHEMA>
+
+Expected JSON Output:
+{
+  "scalability_score": 9,
+  "reasoning": "Pure-play SaaS model with automated onboarding and zero marginal cost for new users. Global expansion is unlocked by the cloud-native architecture."
+}

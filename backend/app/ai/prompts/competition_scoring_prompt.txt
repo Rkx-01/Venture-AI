@@ -1,0 +1,30 @@
+Quantify the competitive threat for a startup idea based on the number and strength of its rivals and its level of differentiation. You must provide a normalized score from 1 to 10.
+
+<IMPORTANT_DIRECTION>
+- High Score (8-10): Low competition, high moats, or extreme differentiation.
+- Low Score (1-3): Saturated market with dominant, entrenched incumbents and low differentiation.
+</IMPORTANT_DIRECTION>
+
+<INPUT_DATA>
+Number of Competitors: {{num_competitors}}
+Competitor Strength: {{competitor_strength}}
+Differentiation Level: {{differentiation_level}}
+</INPUT_DATA>
+
+<SCORING_LOGIC>
+- Score 9-10: Blue Ocean. Zero to few indirect competitors. Massive differentiation or deep moat.
+- Score 6-8: Moderate competition. Existing players exist but are vulnerable or the startup has a 10x differentiation factor.
+- Score 4-5: Saturated market. Several strong competitors. Startup has some differentiation but will face a significant uphill battle.
+- Score 1-3: Hyper-competitive Red Ocean. Dominated by giants with high switching costs. Startup is derivative or lacks a clear offensive moat.
+</SCORING_LOGIC>
+
+<SCHEMA>
+- "competition_score": An integer from 1 to 10.
+- "reasoning": A brief explanation of the score.
+</SCHEMA>
+
+Expected JSON Output:
+{
+  "competition_score": 6,
+  "reasoning": "The market has 3-4 established players, but they are legacy incumbents with slow innovation cycles. The startup's AI-first approach provides moderate differentiation, though customer acquisition will be competitive."
+}

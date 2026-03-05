@@ -1,0 +1,30 @@
+Quantify the execution risk for a startup idea based on its technical complexity, regulatory environment, and capital intensity. You must provide a normalized score from 1 to 10.
+
+<IMPORTANT_DIRECTION>
+- High Score (8-10): Extreme risk. Heavy regulation, extreme technical complexity (R&D), or massive capital requirements.
+- Low Score (1-3): Low risk. Simple implementation, zero regulation, low-to-no capital required to launch.
+</IMPORTANT_DIRECTION>
+
+<INPUT_DATA>
+Technical Complexity: {{technical_complexity}}
+Regulatory Barriers: {{regulatory_barriers}}
+Capital Requirements: {{capital_requirements}}
+</INPUT_DATA>
+
+<SCORING_LOGIC>
+- Score 9-10: Extreme hurdle. Requires deep tech/long R&D, heavily regulated (e.g., Biotech, Aerospace), or requires tens of millions in upfront capital.
+- Score 6-8: High hurdle. Complex software engineering, moderate regulation (e.g., FinTech, HealthTech), and significant seed capital needed.
+- Score 3-5: Moderate hurdle. Standard software engineering, low regulation, and manageable capital requirements.
+- Score 1-2: Low hurdle. Trivial implementation (e.g., simple wrapper/landing page), zero regulations, and can be bootstrapped with minimal funds.
+</SCORING_LOGIC>
+
+<SCHEMA>
+- "execution_risk_score": An integer from 1 to 10.
+- "reasoning": A brief explanation of the score.
+</SCHEMA>
+
+Expected JSON Output:
+{
+  "execution_risk_score": 5,
+  "reasoning": "Moderate risk due to standard technical complexity and low capital needs. The primary hurdle is navigating local data privacy regulations (GDPR), but implementation remains straightforward."
+}

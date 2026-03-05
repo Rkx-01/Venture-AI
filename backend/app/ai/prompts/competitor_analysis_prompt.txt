@@ -1,0 +1,61 @@
+Identify and analyze real-world, currently existing competitors for the following startup idea. You must prioritize factual accuracy and avoid hallucinating companies or products that do not exist.
+
+<ANTI_HALLUCINATION_RULES>
+1. ONLY include companies that you are certain exist. 
+2. If you are unsure if a company is real, DO NOT include it.
+3. Prioritize well-known market leaders (incumbents) and established startups.
+4. If a niche is extremely new and has no direct competitors, identify "Indirect Competitors" (how users solve the problem today, e.g., "Excel spreadsheets").
+</ANTI_HALLUCINATION_RULES>
+
+<INPUT_DATA>
+Startup Idea: {{idea_text}}
+Industry: {{industry}}
+</INPUT_DATA>
+
+<SCHEMA>
+- "competitors": A list of 3-5 REAL competitor objects:
+    - "name": The exact name of the competitor company or product.
+    - "description": A factual summary of their core product/service.
+    - "product_category": Classification (e.g., "Direct Competitor", "Indirect Competitor", "Market Incumbent").
+    - "market_focus": Their primary target audience (e.g., "Enterprise", "SMBs", "Gen Z Consumers").
+    - "strengths": A list of 2-3 core strengths (e.g., "Strong ecosystem", "Advanced AI").
+    - "weaknesses": A list of 2-3 significant weaknesses (e.g., "Complex pricing", "Poor scalability").
+- "summary": A brief, professional assessment of the competitive landscape based on the identified real players.
+</SCHEMA>
+
+<EXAMPLES>
+Example 1: AI productivity assistant for remote teams
+Industry: AI Tools / Productivity
+Expected JSON Output:
+{
+  "competitors": [
+    {
+      "name": "Notion AI",
+      "description": "Integrated AI writing and organization tools within the Notion workspace.",
+      "product_category": "Market Incumbent",
+      "market_focus": "Knowledge workers and remote-first teams",
+      "strengths": ["Huge existing user base", "Deep integration into project management"],
+      "weaknesses": ["Complex learning curve", "AI features require additional subscription"]
+    },
+    {
+      "name": "Motion",
+      "description": "AI-driven calendar and task manager that automatically schedules work for teams.",
+      "product_category": "Direct Competitor",
+      "market_focus": "High-growth startups and productivity-focused professionals",
+      "strengths": ["Automated scheduling efficiency", "Clean and focused UX"],
+      "weaknesses": ["Fragmented project management features", "Premium pricing barrier"]
+    },
+    {
+      "name": "Clockwise",
+      "description": "AI calendar assistant that optimizes schedules for focus time and team availability.",
+      "product_category": "Direct Competitor",
+      "market_focus": "Enterprise product and engineering teams",
+      "strengths": ["Focus on team synchronization", "Excellent G-Suite integration"],
+      "weaknesses": ["Limited to G-Suite users", "Mobile application experience is secondary"]
+    }
+  ],
+  "summary": "The remote productivity space is highly competitive, dominated by incumbents like Notion AI and specialized AI-first schedulers like Motion and Clockwise. Success requires a deep niche focus or superior integration capabilities."
+}
+</EXAMPLES>
+
+Expected JSON Output:

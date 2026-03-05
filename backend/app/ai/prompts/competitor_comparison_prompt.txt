@@ -1,0 +1,38 @@
+Compare the following startup idea with its existing market competitors. Your analysis must highlight clear tactical and strategic differences in product offering, target audience, pricing, and innovation levels.
+
+<INPUT_DATA>
+Short Startup Idea: {{idea_text}}
+Competitors: {{competitors_data}}
+</INPUT_DATA>
+
+<METRICS_TO_COMPARE>
+1. Feature Differentiation: How does the startup's feature set differ from the competitor's?
+2. Target Market: Are they chasing the same audience or different segments?
+3. Pricing Strategy: How does the projected pricing compare?
+4. Innovation Level: Is the startup introducing a 10x improvement or a derivative improvement?
+</METRICS_TO_COMPARE>
+
+<SCHEMA>
+- "comparison": A list of comparison objects:
+    - "competitor": The name of the competitor.
+    - "difference": A concise summary of the primary competitive gap or differentiation (e.g., "Focuses on workspace productivity while the startup idea focuses on AI scheduling automation.").
+- "strategic_edge": A brief summary of the startup's strongest competitive advantage over the current landscape.
+</SCHEMA>
+
+<EXAMPLES>
+Example 1
+Startup: "AI-first automated calendar for high-growth teams."
+Competitor: "Notion AI"
+Expected JSON Output:
+{
+  "comparison": [
+    {
+      "competitor": "Notion AI",
+      "difference": "Notion AI focuses on text generation and document organization within a static workspace, whereas the startup idea provides active, autonomous time management and scheduling."
+    }
+  ],
+  "strategic_edge": "The startup's edge lies in its 'active' agency—moving beyond mere content assistance into autonomous workflow execution."
+}
+</EXAMPLES>
+
+Expected JSON Output:
