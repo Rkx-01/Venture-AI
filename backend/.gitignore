@@ -1,0 +1,3 @@
+# Ignore runtime log files — never commit these to version control
+logs/
+*.log
